@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0D47A1">
 <title>Luk by chapter 15</title>
 
 <script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
@@ -16,10 +15,6 @@
 <script type='text/javascript' src='js/book-names.js'></script>
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
-
-<link rel="manifest" href="./manifest.webmanifest" />
-<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
-
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
 
 <script type="text/javascript">
@@ -28,7 +23,7 @@ $(document).ready(function() {
 });
 
 // Chapters
-var chapters = [ { start: 3, end: 5 }];
+var chapters = [];
 var hasIntro = false;
 var baseRef  = "42-LUK-";
 
@@ -43,10 +38,12 @@ var baseRef  = "42-LUK-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
+  <span class="button"><a href='' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
   <span class="button"><a href='42-LUK-014.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
-  <span id="book-selector">&nbsp;&nbsp;Luk by chapter&nbsp;&nbsp;</span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Luk by chapter&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;15&nbsp;&nbsp;</a></span>
   <span class="button"><a href='42-LUK-016.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='00-LUK-2-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
 </div>
 </div>
 
@@ -54,6 +51,5 @@ var baseRef  = "42-LUK-";
 
 <div class="c-drop">15</div> 
 </div>
-<script type='text/javascript' src='./pwa-main.js'></script>
 </body>
 </html>

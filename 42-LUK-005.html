@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0D47A1">
 <title>Luk by chapter 5</title>
 
 <script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
@@ -16,10 +15,6 @@
 <script type='text/javascript' src='js/book-names.js'></script>
 
 <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
-
-<link rel="manifest" href="./manifest.webmanifest" />
-<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
-
 <link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
 
 <script type="text/javascript">
@@ -28,7 +23,7 @@ $(document).ready(function() {
 });
 
 // Chapters
-var chapters = [ { start: 3, end: 5 }];
+var chapters = [];
 var hasIntro = false;
 var baseRef  = "42-LUK-";
 
@@ -43,24 +38,34 @@ var baseRef  = "42-LUK-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
+  <span class="button"><a href='' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
   <span class="button"><a href='42-LUK-004.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
-  <span id="book-selector">&nbsp;&nbsp;Luk by chapter&nbsp;&nbsp;</span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;Luk by chapter&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;5&nbsp;&nbsp;</a></span>
   <span class="button"><a href='42-LUK-006.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='00-LUK-2-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
 </div>
 </div>
 
 <div id="content">
 
-<div class="c-drop">5</div> 
 
-<div class="s"><div id="s1">Set 19 - Jesus heals a man with a skin disease</div></div><a id="v12"></a>
+<div class="s"><div id="s1">Set 18 - Fishing for People</div></div>
+<div class="m">
+<div class="c-drop">5</div> </div>
+
+<div class="s"><div id="s2">Set 19 - Jesus heals a man with a skin disease</div></div><a id="v12"></a>
 <div class="p"><span class="v">12</span><span class="vsp">&nbsp;</span>So Jesus was in this one town. And there was this man there with a REALLY bad skin disease. And he saw Jesus. And he knelt down in front of Jesus and he bowed down with his forehead touching the ground. And he begs Jesus, "Jesus," and he was like, "sir, if you want to, you can make me whole again."<span id="bookmarks12"></span></div><span id="bookmarks12"></span><a id="v13"></a>
 <div class="p"><span class="v">13</span><span class="vsp">&nbsp;</span>And Jesus reaches out his hand and touches the man, and says, "I want to...<span id="bookmarks13"></span></div>
 
-<div class="s"><div id="s2">20 - Jesus Heals a paralyzed man</div></div><span id="bookmarks13"></span><a id="v17"></a>
+<div class="s"><div id="s3">20 - Jesus Heals a paralyzed man</div></div><span id="bookmarks13"></span><a id="v17"></a>
 <div class="p"><span class="v">17-26</span><span class="vsp">&nbsp;</span>So one day Jesus was teaching people. And some of the people there were Pharisees who were this kind of religious political group. And also some experts in the religious law. And they had come from every town in this northern region called "the Galilee" and also from this southern region called Judea. Even from the capital called Judea in the south. a;sdlkfjasd;lfkjas;dlfkj a;sldkfj;alkj asd;lfkj asdf;l jasdf;lk jasdf;l kjasdf;l kjfdas ;ljkfadsjlk ;fadsjlk ;fdasl kj; lkjlkjlkjlkj<span id="bookmarks17-26"></span></div>
+
+<div class="s"><div id="s4">Set 21 -</div></div><span id="bookmarks17-26"></span>
+<div class="p"></div>
+
+<div class="s"><div id="s5">Set 22 -</div></div><span id="bookmarks17-26"></span>
+<div class="p"></div>
 </div>
-<script type='text/javascript' src='./pwa-main.js'></script>
 </body>
 </html>

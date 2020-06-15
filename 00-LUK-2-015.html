@@ -23,7 +23,7 @@ $(document).ready(function() {
 });
 
 // Chapters
-var chapters = [ { start: 14, end: 14 }, { start: 17, end: 17 }, { start: 19, end: 20 }, { start: 26, end: 26 }];
+var chapters = [ { start: 1, end: 19 }, { start: 21, end: 29 }];
 var hasIntro = false;
 var baseRef  = "00-LUK-2-";
 
@@ -38,16 +38,21 @@ var baseRef  = "00-LUK-2-";
 
 <div id="toolbar-top">
 <div class="navigation-top">
+  <span class="button"><a href='42-LUK-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
   <span class="button"><a href='00-LUK-2-014.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
-  <span id="book-selector">&nbsp;&nbsp;LUKE by Set&nbsp;&nbsp;</span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;LUKE by Set&nbsp;&nbsp;</a></span>
 <span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;15&nbsp;&nbsp;</a></span>
   <span class="button"><a href='00-LUK-2-016.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
 </div>
 </div>
 
 <div id="content">
 
-<div class="c-drop">15</div> 
+
+<div class="s"><div id="s1">Set 15- Jesus rejected in Nazareth</div></div>
+<div class="m">
+<div class="c-drop">15</div> </div>
 </div>
 </body>
 </html>
